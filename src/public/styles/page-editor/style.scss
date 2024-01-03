@@ -1,0 +1,114 @@
+/**
+ * 页面编辑器
+ * 公共样式
+ */
+.set-img-hot-area-button,.set-link-button{
+	display: inline-block;
+	max-width: 100%;
+	
+	.body-wrap{
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		align-items: center;
+	}
+	
+	.result-content{
+		overflow: hidden;
+		word-break: break-all;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	
+	.action{
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	
+	.remove{
+		margin-left: 6px !important;
+	}
+}
+
+::v-deep .com-content-empty{
+	background-color: $--background-color-base;
+}
+
+::v-deep .img-ad-wrap{
+	
+	position: relative;
+	width:100%;
+	overflow: hidden;
+	
+	img{
+		display: block;
+		width:100%;
+	}
+	
+	.desc{
+		position: absolute;
+		left:0px;
+		right:0px;
+		bottom:0px;
+		background-color: rgba($--color-black,.60);
+		width: 100%;
+		font-size: $--font-size-base;
+		color: $--color-white;
+		box-sizing: border-box;
+		overflow: hidden;
+		padding: 8px 14px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		text-align: left;
+	}
+}
+
+::v-deep .com-control{
+	@mixin title{
+		font-weight: $font-weight-large;
+		font-size: $--font-size-medium;
+		color: $--color-text-primary;
+	}
+	&-form{
+		.el-form-item:last-child{
+			margin-bottom: 0px;
+		}
+		
+		.el-form-item.large-label .el-form-item__label{
+			@include title
+		}
+		
+		.el-form-item.column-content{
+			.el-col{
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+	
+	&-area
+	{
+		margin-bottom: 25px;
+		padding-bottom: 25px;
+		border-bottom: 1px solid $--border-color-light;
+		
+		&:last-child{
+			border-bottom:none;
+			margin-bottom: 0px;
+			padding-bottom:0px;
+		}
+		
+		&-title{
+			margin-bottom: 20px;
+			@include title;
+		}
+		
+		&-desc{
+			color: $--color-text-secondary;
+			margin-top: 10px;
+			font-size: $--font-size-base;
+		}
+	}
+}

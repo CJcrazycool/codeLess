@@ -1,0 +1,19 @@
+/**
+ * 页面编辑器
+ * 公共变量定义
+ */
+$com-baseShadow:0px 0px 30px 0px rgba(0, 0, 0, 0.13);
+
+
+//图片广告、轮播图组件
+$com-imgShadow:$com-baseShadow;
+$com-imgRound:10px;
+//预订组件
+$com-hotelBook-round:10px;
+$com-hotelBook-button-mini:4px;
+$com-hotelBook-button-round:22px;
+$com-hotelBook-shadow:$com-baseShadow;
+//文章列表圆角
+$com-newsList-round:10px;
+$com-newsList-round-mini:4px;
+$com-newsList-shadow:$com-baseShadow;

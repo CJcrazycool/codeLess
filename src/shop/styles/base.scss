@@ -1,0 +1,170 @@
+/**
+ * 该文件为项目基础样式
+ * 本项目样式请写入该文件
+ */
+
+//订单表格
+.order-table-view{
+	
+	.empty-data{
+		margin-top: 30px;
+	}
+	
+	.num-info{
+		display: inline-block;
+		margin-right: 30px;
+	}
+	
+	.order-time,.order-operate{
+		display: inline-block;
+		margin-left: 6px;
+	}
+	
+	.order-table{
+		flex: 1;
+		font-size: $--font-size-extra-small;
+	}
+	
+	.tb-header{
+		border: 1px solid $--border-color-lighter;
+		color: $--color-text-secondary;
+		
+		.tb-header-cell{
+			background-color: $--background-color-base !important;
+			padding: 8px 0;
+			
+		}
+	}
+	
+	.tb-header-cell,.row-cell{
+		text-align: left;
+		border-right: 1px solid $--border-color-lighter;
+		&:last-child{
+			border-right: none;
+		}
+		
+		.cell{
+			display: inline-block;
+			box-sizing: border-box;
+			position: relative;
+			vertical-align: middle;
+			padding-left: 10px;
+			padding-right: 10px;
+			width: 100%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: normal;
+			word-break: break-all;
+			line-height: 23px;
+		}
+	}
+	
+	.tb-body{
+		.row{
+			margin-top: 12px;
+		}
+		
+		.row-cell{
+			padding: 10px 0px;
+			border-bottom: 1px solid $--border-color-lighter;
+		}
+		
+		.row-header{
+			background-color: $--background-color-base;
+			padding: 10px;
+			font-size: $--font-size-extra-small;
+			border: 1px solid $--border-color-lighter;
+			border-bottom:none;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+		.row-detail{
+			border-collapse: collapse;
+			border: 1px solid $--border-color-lighter;
+		}
+		
+	}
+	
+	.state-condition{
+		margin-bottom: 8px;
+		.el-tabs__nav-wrap::after{
+			background-color:unset;
+		}
+	}
+	
+}
+
+//订单详情
+.room-order-detail{
+	
+	.order-num,.pay-num{
+		display: inline-block;
+		margin-left: 20px;
+		font-size: $--font-size-extra-small;
+	}
+	
+	.order-alert{
+		margin-top: 15px;
+	}
+	
+	.order-steps{
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+	
+	.expand-pay{
+		float:left;
+	}
+	
+	.pay-info{
+		margin-bottom: 30px;
+	}
+	
+	.pay-detail-table,.refund-detail-table{
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+	
+	.price-detail{
+		text-align: right;
+		font-size: $--font-size-base;
+		
+		.price-item{
+			display: inline-block;
+			margin-left: 20px;
+		}
+		
+		.sum-price{
+			margin-top: 10px;
+			font-weight: $font-weight-large;
+			
+			.num{
+				color:$--color-danger;
+				font-size: $--font-size-medium;
+			}
+		}
+		
+		.refund-price{
+			margin-left:20px;		
+		}
+	
+		.pay-type{
+			margin-right: 10px;
+		}
+	
+	}
+	
+	.price-operate{
+		margin-top: 10px;
+	}
+	
+	.refund-info{
+		margin-top: 60px;
+	}
+}
+
+.refund-alert{
+	margin-bottom: 20px;
+}

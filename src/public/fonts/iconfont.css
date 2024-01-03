@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "ext-iconfont"; /* Project id 4179528 */
+  src: url('iconfont.ttf?t=1702603431559') format('truetype');
+}
+
+.ext-iconfont {
+  font-family: "ext-iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ext-icon-button:before {
+  content: "\e6e0";
+}
+
+.ext-icon-biaoti:before {
+  content: "\e62b";
+}
+
+.ext-icon-zixun:before {
+  content: "\e62d";
+}
+
+.ext-icon-qrcode:before {
+  content: "\e642";
+}
+
+.ext-icon-scan:before {
+  content: "\e712";
+}
+
+.ext-icon-refund:before {
+  content: "\e75a";
+}
+
+.ext-icon--trade:before {
+  content: "\e604";
+}
+
+.ext-icon-line:before {
+  content: "\e6e5";
+}
+
+.ext-icon-text:before {
+  content: "\e67f";
+}
+
+.ext-icon-lunbo:before {
+  content: "\e627";
+}
+

@@ -1,0 +1,27 @@
+/**
+ * 该文件为全局可引用的变量
+ * （可共享使用ElementUI变量）
+ */
+@import "~element-ui/packages/theme-chalk/src/common/var";
+
+
+//背景色(深色)
+$background-color-deep: #f2f3f7;
+//选中色(深色)
+$selected-color-deep: #155bd4;
+//加粗字体
+$font-weight-large: 800;
+//滚动条背景色
+$scrollbar-background-color: #e6e7e8;
+$scrollbar-thumb-background-color: $--scrollbar-background-color;
+$scrollbar-thumb-hover-background-color: $--scrollbar-hover-background-color;
+//菜单
+$nav-menu-background-color: #393d49;
+$nav-menu-background-color_focus: #2e313a;
+$nav-menu-background-color_active: #4e5465;
+$nav-menu-font-color: $--color-text-placeholder;
+$nav-menu-font-color_active: $--color-primary-light-1;
+//顶部菜单
+$header-menu-height: 58px;
+$header-background-color: $nav-menu-background-color;
+$hedaer-background-color_focus: $nav-menu-background-color_focus;
